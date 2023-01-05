@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNF | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-utensils"></i></span>
+                    <span class="title">Restaurante</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-fish-fins"></i></span>
+                    <span class="title">Peixe</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                    <span class="title">Atendimento</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <center>
+        <img src="./imagens/logo.png">
+        </center>
+    </header>
+
+    <div class="texto-principal">
+        <h1>Sobre o Pesqueiro</h1>
+        <p>Localizada em Caucaia do Alto, o pesqueiro <strong>Nossa Familia</strong> fornece uma experiencia unica no universo da pesca.</p>
+        <p>Nossa missão é:<strong><em> Proporcionar divertimento para toda a familia.</em></strong></p>
+    </div>
+
+    <div class="lazer">
+        <center>
+        <img class="imgpesca" src="./imagens/lago.png">
+        <p class="txtprincipal">Venham passar o dia aqui conosco, um lugar tranquilo e aconchegante.</p>
+        <p class="txt">Uma excelente opção de lazer para toda a família, tanto para quem gosta de pescar, quanto para quem só procura tranquilidade, onde possa desfrutar com toda a comodidade, segurança e cercado de muito verde.</p>
+        </center>
+    </div>
+
+        <div class="opcoes">
+            <center>
+        <h1>Aperitivos</h1>
+        <img src="./imagens/imgcomida1circulo.png">
+        <img src="./imagens/imgcomida2circulo.png">
+        <img src="./imagens/imgcomida3.png">
+        <h1>Diversão para toda a família</h1>
+        <img src="./imagens/diversaocirculo.png">
+        <img src="./imagens/diversao2circulo.png">
+        <img src="./imagens/diversao3circulo.png">
+        <h1>Pescaria</h1>
+        <img src="./imagens/imgpeixecirculo1.png">
+        <img src="./imagens/imgpeixecirculo2.png">
+        <img src="./imagens/imgpeixecirculo3.png">
+            </center>
+    </div>
+
+    <div class="localizacao">
+        <center>
+        <h1>Nossa localização </h1>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.380286836678!2d-47.04583260530721!3d-23.698110074895432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfa75c29858907%3A0x8a5197e458169ce4!2sPesqueiro%20Nossa%20Fam%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1670946198421!5m2!1spt-BR!2sbr" width="75%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
+    </div>
+
+
+    <div class="footermain">
+        <div class="mainfooter">
+        <div class="peixe-palhaço"></div>
+        <div class="peixe-palhaço2"></div>
+        </div>
+                      
+        <div class="lagoinfo">
+        <div class="lagoinfo2 lagoinforight">
+        <p>© 2023 Pesqueiro Nossa Familia todos os direitos reservados.</p>
+        </div>
+        </div>
+        </div>
+          
+        </div>
+
+</div>
+
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
